@@ -1,0 +1,16 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+  background: #ffffff;
+}
+
+.show {
+  display: block !important;
+}
