@@ -1,12 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./**/*.{html,js}", "/opendirectory-finder/*{html,js}" "./opendirectory-finder/style.css"],
+  content: [ './**/*.{html,js}'],
   theme: {
-    extend: {},
+    screens:{
+      'large': {'max': '1330px'},
+      'big': {'max': '1023px'},
+      'middle': {'max': '720px'},
+      'small': {'max': '560px'},
+    },
+    fontFamily: {
+      poppins: ['Poppins', "sans-serif"],
+      cormorant: ['Cormorant Garamond', "sans-serif"],
+    },
+    extend: {
+      colors: {
+        "extra-color": "var(--extra-color)",
+      },
+    },
   },
-  plugins: [],
-};
-
-
-
-npx tailwindcss -i ./opendirectory-finder/style.css -o ./opendirectory-finder/style2.css --watch
+}
